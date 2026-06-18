@@ -1,6 +1,6 @@
 const API_BASE_URL =
   import.meta.env.VITE_API_BASE_URL ||
-  "https://ai-resume-analyzer-backend.onrender.com";
+  "hhttps://ai-resume-analyzer-backend-40ue.onrender.com";
 
 export async function analyzeResume(
   file,
