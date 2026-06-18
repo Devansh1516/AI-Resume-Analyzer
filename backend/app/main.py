@@ -16,7 +16,10 @@ app = FastAPI(
 # CORS allows the Vite frontend to call the API during local development.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[settings.frontend_origin],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://ai-resume-analyzer-two-eta.vercel.app",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
